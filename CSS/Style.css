@@ -4,7 +4,9 @@
     --color_primary: rgb(176, 213, 216);
     --color_secundary: #253f39;
     --color_terciary:rgb(104, 133, 126);
+    --color_blog: #cddfdb;
     --black: #000;
+    --button_one:#253f39; 
 }
 *
 {
@@ -24,6 +26,7 @@ header
     height: 130px;
     display: grid;
     grid-template-rows: 1fr 1fr ;
+    border: 3px solid var(--color_primary);
 }
 /*Colores del contenedor header parte superior*/
 header .header-icons-container
@@ -63,7 +66,6 @@ nav
 {
     display: grid;
     background-color: var(--color_terciary);
-    border-bottom: 3px solid var(--color_primary);
     grid-template-columns: repeat(2, 1fr);
     height: 80px;
 }
@@ -89,7 +91,7 @@ nav .profile-link
 nav .profile-link a 
 {
     display: inline;
-    border-bottom: 2px solid var(--color_primary);
+    border-bottom: 3px solid var(--color_primary);
     color: var(--color_primary);
     text-decoration: none;
     font-size: 1.8rem;
@@ -98,7 +100,7 @@ nav .profile-link a
 nav .profile-link a:hover
 {
     color: var(--color_secundary);
-    border-bottom: 2px solid var(--color_secundary);
+    border-bottom: 3px solid var(--color_secundary);
 }
 
 /*///////////////////////////////////MAIN //////////////////////////////////*/
@@ -107,10 +109,11 @@ nav .profile-link a:hover
     background-image: url(https://www.xtrafondos.com/wallpapers/calaveras-abstractas-4566.jpg);
     width:100%;
     height: 100%;
-    border: 0.3rem solid rgb(176, 213, 216);
+    border: 0.3rem solid var(--color_primary);
+    background-position: center;
+    background-position: no-repeat;
     background-size:cover;
     position: relative;
-    
 }
 .container::before
 {
@@ -118,10 +121,9 @@ nav .profile-link a:hover
     background-color: #253f39c2;
     position: absolute;
     width:100%;
-    top: 130px;
-    height: calc(100% - 130px);
+    height: 100%
 }
-.content
+.container .content
 {
     display: flex;
     margin: auto;
@@ -132,31 +134,187 @@ nav .profile-link a:hover
     justify-content: center;
 
 }
- h2
+.container .content h2
 {
     position: relative;
-    color: rgb(176, 213, 216);
+    color: var(--color_primary);
     font-size: 6rem;
     text-align: center;
 }
-button
+.container .content a 
 {
     position: relative;
-    color: rgb(176, 213, 216);
+    display: flex;
     margin-top: 40px;
     width: 180px;
     height: 50px;
     border-radius: 10px;
-    border: 0.2rem solid rgb(176, 213, 216);
-    background-color: #253f39;
-    font-family: 'Times New Roman', Times, serif;
+    border: 0.3rem solid var(--color_primary);
+    background-color: var(--color_secundary);
     font-size: 1.6rem;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
-button:hover
+.container .content a:hover
+{
+    background-color: var(--color_terciary);
+}
+.container .content a 
+{
+    color: rgb(176, 213, 216);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container .content a:hover
 {   
-    background-color: rgb(176, 213, 216);
-    border: 0.2rem solid #253f39;
-    color: #253f39;
+    color: var(--button_one);
     font-weight: 700;
+    text-decoration: none;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////PANTALLA 2 ////////////////////////////////////////////*/
+/*////////////////////////BLOG PRINCIPAL////////////////////////////////////////*/
+.container-section-main
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--color_blog);
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    font-size: 1.6rem;
+    align-content: center;
+    padding: 40px;
+    border-top: 0.3rem solid var(--color_primary);
+    border-bottom: 0.3rem solid var(--color_primary);
+}
+
+/*/Imagen*/
+.container-section-img 
+{
+    display: flex;
+    grid-column: 2;
+    place-content: end;
+    padding-right: 40px;
+}
+.container-section-img img
+{
+    width: 400px;
+}
+/*/margenes internas*/
+.container-section-main article
+{
+    padding-right: 15%;
+}
+/*Estilado del texto*/
+.container-section-main article h2
+{
+    font-size: 4.4rem;
+    color : var(--color_secundary);
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.container-section-main article p
+{
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-bottom: 32px;
+}
+/*/Estilado del boton*/
+.container-section-main article a
+{
+    text-decoration: none;
+    color: var(--color_secundary);
+    font-weight: 700;
+}
+.container-section-main article a:hover
+{
+    color: var(--color_terciary);
+}   
+/*/////////////////////////////BLOGS SECUNDARIOS/////////////////////*/
+/*/Cambiar la direccion del contenido y centrarlo todo*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3rem solid var(--color_primary);
+
+}
+/*/Crear una grilla para los elementos */
+.container-section-secundary
+{
+    display: grid;
+    width: 900px;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    margin-top: 80px;
+}
+/*Define el tamaño de la grilla*/
+.container-section-secundary .contents
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    height: auto;
+
+}
+/*Estilos de los contenidos del blogs*/
+.container-section-secundary .contents h3
+{
+    color: var(--color_secundary);
+    font-size: 2.4rem;
+    margin-top: 20px;
+}
+.container-section-secundary .contents p
+{
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+/*Efecto de leer mas...*/
+.container-section-secundary .contents a
+{
+    text-decoration: none;
+    color: var(--color_secundary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.container-section-secundary .contents a:hover
+{
+    color: var(--color_terciary);
+}
+/*/Footer/*/
+footer .container-footer
+{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    flex-direction: column;
+    
+
+}
+footer .container-footer div
+{
+    background-color: var(--color_blog);
+    border-right: 0.3rem solid var(--color_primary);
+    border-left: 0.3rem solid var(--color_primary);
+}
+footer .container-footer p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700px;
+    color : var(--color_primary);
+    background-color: var(--color_secundary);
+    border: 0.3rem solid var(--color_primary);
 }
