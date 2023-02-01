@@ -20,6 +20,7 @@ html
 }
 /*//////////////////////////////////////////////////HEADER PART 1/////////////////*/
 /*Tamaño del contenedor padre del header dividido en dos filas*/
+
 header
 {
     width: 100%;
@@ -108,8 +109,6 @@ nav .profile-link a:hover
 {
     background-image: url(https://www.xtrafondos.com/wallpapers/calaveras-abstractas-4566.jpg);
     width:100%;
-    height: 100%;
-    border: 0.3rem solid var(--color_primary);
     background-position: center;
     background-position: no-repeat;
     background-size:cover;
@@ -120,8 +119,10 @@ nav .profile-link a:hover
     content: "";
     background-color: #253f39c2;
     position: absolute;
-    width:100%;
-    height: 100%
+    top: 3px;
+    left: 3px;
+    width:  calc(100% - 5px);
+    height: calc(100% - 5px);
 }
 .container .content
 {
