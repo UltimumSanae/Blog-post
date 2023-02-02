@@ -1,0 +1,71 @@
+/*////////////////////////BLOG PRINCIPAL////////////////////////////////////////*/
+/*/Cambiar la direccion del contenido y centrarlo todo*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-section-main
+{
+
+    grid-template-columns: 3fr 4fr;
+    align-content: center;
+}
+
+/*/Imagen*/
+.container-section-img 
+{
+    display: flex;
+    place-content: end;
+    padding-right: 40px;
+}
+.container-section-img img
+{
+    max-width: 400px;
+    min-width: 300px;
+}
+/*/////////////////////////////BLOGS SECUNDARIOS/////////////////////*/
+/*/Crear una grilla para los elementos */
+.container-section-secundary .title-article
+{
+    grid-column: 1/4;
+    margin-bottom: 80px;
+    line-height: 80px;
+}
+.container-section-secundary
+{
+    width: 90%;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+/*Define el tamaño de la grilla*/
+.container-section-secundary .contents
+{
+    padding: 10px;
+    width: 100%;
+}
+/*Estilos de los contenidos del blogs*/
+.container-section-secundary .contents h3
+{
+    font-size: 2.4rem;
+
+}
+.container-section-secundary .contents p
+{
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+/*Efecto de leer mas...*/
+.container-section-secundary .contents a
+{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container-section-secundary .contents a:hover
+{
+    color: var(--color_terciary);
+}
