@@ -79,7 +79,7 @@ nav .nav-logo-container
 }
 nav .nav-logo-container img
 {
-    width: 220px;
+    width: 200px;
     height: auto;
 }
 nav .profile-link
@@ -110,7 +110,7 @@ nav .profile-link a:hover
     background-image: url(https://www.xtrafondos.com/wallpapers/calaveras-abstractas-4566.jpg);
     width:100%;
     background-position: center;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
     background-size:cover;
     position: relative;
 }
@@ -332,4 +332,97 @@ footer .container-footer p
     color : var(--color_primary);
     background-color: var(--color_secundary);
     border: 0.3rem solid var(--color_primary);
+}
+/*/////////////////////////////////////////////////////////////*/
+/*///////////BLOG COMPLETO DE LEER MAS ////////////////////////*/
+/*/Delimitador del crecimiento de la pantalla*/
+.container-section-blogpost
+{
+    max-width: 900px;
+    padding: 20px 24px 0;
+}
+/*/imagen del contenedor*/
+.blogpost-img-container img
+{
+    width: 100%;
+}
+/*/estilizados de los textos*/
+.blogpost-main-container h3
+{
+    font-size: 2rem;
+    border-bottom: 3px solid var(--color_primary);
+    color: var(--color_secundary);
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.blogpost-main-container h1
+{
+    font-size: 2.8rem;
+    color: var(--color_secundary);
+    text-align: end;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.blogpost-main-container p
+{
+    font-size: 1.6rem;
+    margin-bottom: 24px
+}
+/*/Seccion de contacto*/
+.contact-main-container
+{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: var(--color_terciary);
+    padding: 30px 20px 20px;
+}
+.contact-main-container img
+{
+    width: 90px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*fondo del contacto*/
+.contact
+{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: var(--color_blog);
+    border: 3px solid var(--color_secundary);
+    border-radius: 10px;
+    padding: 10px;
+}
+/*/efectos del redireccionamiento*/
+.contact a
+{
+    color: var(--color_secundary);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 40px;
+    border-bottom: 3px solid var(--color_secundary);
+    display: inline-block;
+    margin: 0 0 10px 20px;
+    width: 80%;
+    align-self: flex-end;
+
+}
+/*efectos*/
+.contact a:hover
+{
+    color : var(--color_terciary);
+    border-bottom: 3px solid var(--color_terciary);
+}
+/*tamañp del parrafo y estilos*/
+.contact p 
+{
+    font-size: 1.6rem;
+    width: 80%;
+    padding: 0 0 10px 20px;
 }

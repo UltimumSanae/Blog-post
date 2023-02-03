@@ -69,3 +69,27 @@ main
 {
     color: var(--color_terciary);
 }
+/*/CONTACTO*/
+/*/delimitacion del tamaño del contenedor por medio de otra capa*/
+.contact-size
+{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+/*/tamaño de las cuadros de texto para que no se buguee*/
+.contact-left
+{
+    min-width: 40%;
+    margin: auto;
+}
+.contact-right
+{
+    min-width: 40%;
+    margin: auto;
+}
+/*/tamaño maximo del contenido*/
+.contact a , .contact p
+{
+    min-width: 220px;
+}
