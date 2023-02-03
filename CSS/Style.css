@@ -197,12 +197,13 @@ main
     margin: auto;
     display: grid;
     font-size: 1.6rem;
-    padding: 40px;
+    padding: 20px;
 }
 /*/Imagen*/
 .container-section-img img
 {
     width: 100%;
+    height: 270px;
 }
 /*Estilado del texto*/
 .container-section-main article h2
@@ -425,4 +426,36 @@ footer .container-footer p
     font-size: 1.6rem;
     width: 80%;
     padding: 0 0 10px 20px;
+}
+/*//////////////////////////BLOG PERFIL///////////////////////////////*/
+/*/ Tamaño y espaciados de titulo*/
+.container-section-main .container-section-main-perfil
+{
+    font-size: 4rem;
+}
+/*/espacio del texto vs la casilla*/
+.container-section-main article .perfil
+{
+    margin-bottom: 20px;
+}
+/*/ tamaño y espaciado de los proyectos*/
+.container-section-secundary .contents-main h3
+{
+    margin-top: 18px;
+    font-size: 2.4rem;    
+}
+/*/tamaño de letra de los proyectos parrafo*/
+.container-section-secundary .contents-main p
+{
+    font-size: 1.6rem;
+}
+/*casillas a utilizar del individual*/
+.container-section-secundary .perfil-grid 
+{
+    grid-column: 1/3;
+}
+/*/espaciado vs contact*/
+.container-section-secundary
+{
+    padding-bottom: 80px;
 }

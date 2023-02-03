@@ -93,3 +93,8 @@ main
 {
     min-width: 220px;
 }
+/*////////////BLOG PERFIL//////////////////*/
+.container-section-secundary .perfil-grid 
+{
+    grid-column: 3/4;
+}
